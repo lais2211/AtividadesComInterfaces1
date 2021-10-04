@@ -1,9 +1,13 @@
 package atividade1;
 
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AluguelDoCarro {
+
+    private static SimpleDateFormat dataFormato = new SimpleDateFormat("dd/MM/yyyy HH:ss");
+
     private Date entrada;
     private Date saida;
     private Veiculo veiculo;

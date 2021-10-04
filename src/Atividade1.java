@@ -3,12 +3,14 @@ import atividade1.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Atividade1 {
     public static void main(String[] args) throws ParseException {
+        Locale.setDefault(Locale.US);
+        SimpleDateFormat dataFormato = new SimpleDateFormat("dd/MM/yyyy HH:ss");
         Scanner sc = new Scanner(System.in);
-        SimpleDateFormat dataFormato = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         System.out.println("Dados do aluguel: ");
         System.out.println("Modelo do carro: ");
         String modelo = sc.next();
