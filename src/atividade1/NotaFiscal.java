@@ -29,4 +29,8 @@ public class NotaFiscal {
     public void setTaxa(Double taxa) {
         this.taxa = taxa;
     }
+
+    public Double getPagamentoTotal () {
+        return getPagamentoBasico() + getTaxa();
+    }
 }
